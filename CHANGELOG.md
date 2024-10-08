@@ -1,3 +1,7 @@
+## [2.0.0](https://github.com/tomjs/vscode-extension-webview/compare/v1.3.3...v2.0.0) (2024-10-08)
+
+- feat: chang getState and setState methods [3719b0e](https://github.com/tomjs/vscode-extension-webview/commit/3719b0e)
+
 ## [1.3.3](https://github.com/tomjs/vscode-extension-webview/compare/v1.3.2...v1.3.3) (2024-06-27)
 
 - fix: client mock setState [8f75edb](https://github.com/tomjs/vscode-extension-webview/commit/8f75edb)
