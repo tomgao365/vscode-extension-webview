@@ -71,3 +71,11 @@ Open the [examples](./examples) directory, there are `vue` and `react` examples.
 
 - [react](./examples/react)
 - [vue](./examples/vue)
+
+## Important Notes
+
+### v2.0.0
+
+**Breaking Updates:**
+
+- The simulated `acquireVsCodeApi` is consistent with the `acquireVsCodeApi` of [@types/vscode-webview](https://www.npmjs.com/package/@types/vscode-webview), and `sessionStorage.getItem` and `sessionStorage.setItem` are used to implement `getState` and `setState`.

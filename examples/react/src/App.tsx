@@ -5,13 +5,6 @@ import { vscode } from './utils/vscode';
 import './App.css';
 
 function App() {
-  function onPostMessage() {
-    vscode.postMessage({
-      command: 'hello',
-      text: 'Hey there partner! 🤠',
-    });
-  }
-
   const [message, setMessage] = useState('');
   const [state, setState] = useState('');
 
@@ -21,6 +14,13 @@ function App() {
   const onGetState = () => {
     setState(vscode.getState() as string);
   };
+
+  function onPostMessage() {
+    vscode.postMessage({
+      command: 'hello',
+      text: `💬: ${message || 'Empty'}`,
+    });
+  }
 
   return (
     <main>

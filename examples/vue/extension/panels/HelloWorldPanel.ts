@@ -154,12 +154,15 @@ export class HelloWorldPanel {
       (message: any) => {
         const command = message.command;
         const text = message.text;
-        console.log(`command: ${command}`);
+        console.log(`command: `, command);
 
+        window.showInformationMessage(text);
         switch (command) {
           case 'hello':
+          case 'hello2':
+          case 'hello3':
             // Code that should run in response to the hello message command
-            window.showInformationMessage(text);
+            webview.postMessage({ command, text: Date.now() });
             return;
           // Add more switch case statements here as more webview message commands
           // are created within the webview context (i.e. inside media/main.js)

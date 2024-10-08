@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@tomjs/vscode-extension-webview": "workspace:^",
+    "@tomjs/vscode-webview": "^2.0.0",
     "@vscode/webview-ui-toolkit": "^1.4.0",
     "vue": "^3.4.15"
   },

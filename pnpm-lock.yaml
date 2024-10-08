@@ -111,6 +111,9 @@ importers:
       '@tomjs/vscode-extension-webview':
         specifier: workspace:^
         version: link:../..
+      '@tomjs/vscode-webview':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@vscode/webview-ui-toolkit':
         specifier: ^1.4.0
         version: 1.4.0(react@18.2.0)
@@ -796,6 +799,10 @@ packages:
 
   '@tomjs/tsconfig@1.4.0':
     resolution: {integrity: sha512-alYfyn20p32bIbdvdjW+AYYljxWG797xbCTehXKELZlax5XoCRWKLLygBIGK6DFeTKSopwhZYEQB479mHEwscw==}
+    engines: {node: '>=16'}
+
+  '@tomjs/vscode-webview@2.0.0':
+    resolution: {integrity: sha512-6gTjpPiQ/Sj9XP/JkpMGdHOwZyrQno3UAITEVVj4QOEbPDzPfFdt/qz8XY/1ps5Tx1EuWPWZTnefD4SjVTNsmA==}
     engines: {node: '>=16'}
 
   '@types/json-schema@7.0.15':
@@ -3707,6 +3714,8 @@ snapshots:
       stylelint-prettier: 5.0.0(prettier@3.2.4)(stylelint@16.2.0(typescript@5.3.3))
 
   '@tomjs/tsconfig@1.4.0': {}
+
+  '@tomjs/vscode-webview@2.0.0': {}
 
   '@types/json-schema@7.0.15': {}
 

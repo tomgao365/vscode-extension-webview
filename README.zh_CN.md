@@ -73,3 +73,11 @@ pnpm build
 
 - [react](./examples/react)
 - [vue](./examples/vue)
+
+## 重要说明
+
+### v2.0.0
+
+**破坏性更新：**
+
+- 模拟的 `acquireVsCodeApi` 与 [@types/vscode-webview](https://www.npmjs.com/package/@types/vscode-webview) 的 `acquireVsCodeApi` 保持一致，改用 `sessionStorage.getItem` 和 `sessionStorage.setItem` 来实现 `getState` 和 `setState`。
